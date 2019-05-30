@@ -1,11 +1,15 @@
 #include <iostream>
 
 int main() {
-    int x = 5;
+    char trump_card;
+    std::cin >> trump_card;
+   
+    std::string card;
+    std::cin>> card;
 
-    char achar = '0' + x;
-
-    std::cout << achar << std::endl;
+    if(card[1] == trump_card){
+      std::cout << "a match";
+    }
 
   return 0;
 }
