@@ -1,15 +1,18 @@
 #include <iostream>
 
-int main() {
-    char trump_card;
-    std::cin >> trump_card;
-   
-    std::string card;
-    std::cin>> card;
+int facto(int x){
+  if(x == 1){
+    return x;
+  }
+  else{
+    return x * facto(x-1);
+  }
+}
 
-    if(card[1] == trump_card){
-      std::cout << "a match";
-    }
+int main() {
+
+  int a = 5;
+  std::cout << facto(a) << std::endl;
 
   return 0;
 }
